@@ -9,11 +9,18 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
 
+// TODO: Rename parameter arguments, choose names that match
+// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class SecondFragment : Fragment() {
-
+/**
+ * A simple [Fragment] subclass.
+ * Use the [SeventhFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class SeventhFragment : Fragment() {
+    // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
@@ -29,42 +36,36 @@ class SecondFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        val second_view = inflater.inflate(R.layout.fragment_second, container, false)
-//        val go_to_first_button = second_view.findViewById<Button>(R.id.go_to_first_button)
-//        go_to_first_button.setOnClickListener {
-//            findNavController().navigate(
-//                R.id.action_secondFragment_to_firstFragment,
-//                null,
-//                navOptions {
-//                    anim {
-//                        enter = R.anim.fade_in
-//                        exit = R.anim.slide_out
-//                    }
-//                }
-//            )
-//        }
-        val go_to_third_button = second_view.findViewById<Button>(R.id.go_to_third_button)
-        go_to_third_button.setOnClickListener {
+        val seven_view = inflater.inflate(R.layout.fragment_seventh, container, false)
+        val seven_to_eight_button = seven_view.findViewById<Button>(R.id.seven_to_eight_button)
+        seven_to_eight_button.setOnClickListener {
             findNavController().navigate(
-                R.id.action_secondFragment_to_thirdFragment,
+                R.id.action_seventhFragment_to_eightFragment,
                 null,
                 navOptions {
                     anim {
-                        enter = R.anim.fade_in
-                        exit = R.anim.slide_out
+                        enter = R.anim.slide_in
+                        exit = R.anim.fade_out
                     }
                 }
             )
         }
-        return second_view
+        return seven_view
     }
 
     companion object {
-
+        /**
+         * Use this factory method to create a new instance of
+         * this fragment using the provided parameters.
+         *
+         * @param param1 Parameter 1.
+         * @param param2 Parameter 2.
+         * @return A new instance of fragment SeventhFragment.
+         */
+        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            SecondFragment().apply {
+            SeventhFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

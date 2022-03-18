@@ -4,29 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FirstFragment">
+    tools:context=".SixthFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/first_text"
+        android:id="@+id/sixth_text"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="sixth fragment" />
 
     <Button
+        android:id="@+id/six_to_seven_button"
+        app:layout_constraintTop_toBottomOf="@id/sixth_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/first_button"
-        android:text="@string/go_to_second"
-        app:layout_constraintTop_toBottomOf="@id/first_text"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/go_to_fourth_button"
-        android:text="go to fourth"
-        app:layout_constraintTop_toBottomOf="@id/first_button"/>
+        android:text="go to seven" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

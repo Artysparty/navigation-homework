@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SecondFragment">
+    tools:context=".ThirdFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/second_text"
+        android:id="@+id/third_text"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="second page" />
+        android:text="third page" />
 
 <!--    <Button-->
+<!--        android:id="@+id/third_to_second_button"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"-->
-<!--        android:id="@+id/go_to_first_button"-->
-<!--        android:text="@string/go_to_first"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/second_text"/>-->
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/go_to_third_button"
-        android:text="go to third"
-        app:layout_constraintTop_toBottomOf="@id/second_text"/>
-
+<!--        android:text="go_to_second_from_third"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/third_text" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
